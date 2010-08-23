@@ -13,13 +13,21 @@ dictionary. Sample usage is:
   born MIGHT BE in the dictionary
   burn MIGHT BE in the dictionary
 
-"indict" takes one potential option, "-s", which tells it not to
+"indict" takes two potential options. The "-s" option tells it not to
 print out information about words that are definitely not in the
 dictionary:
 
   $ ./indict -s barn bern birn
   barn MIGHT BE in the dictionary
   birn MIGHT BE in the dictionary
+
+The "-f" option tells it to print out the expected false-positive rate
+of the filter:
+
+  $ ./indict -f antidisestablishmentarianism
+  antidisestablishmentarianism MIGHT BE in the dictionary
+  (Expected false-positive rate is 5.1%)
+
 
 Implementation
 ========================================
