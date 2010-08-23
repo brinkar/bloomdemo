@@ -1,0 +1,19 @@
+Here are the shell commands that I used to go through the exercise:
+
+$ git checkout -b work
+[ Edit indict to add feature, test, "discover" FPR bug ;
+  edit bloom.py to fix bug, test, confirm bugfix ;
+  edit README to document the new feature and change the version to 2.0. ]
+$ git add bloom.py
+$ git ci -m "bloom: in retrospect, I distrust the spirit vision"
+$ git add indict
+$ git add -p README
+[ Only stage the documentation part of the changes ]
+$ git ci -m "indict: add a '-f' option to print out the false-positive rate" \
+         -m "Also document it in README."
+$ git ci -a -m "Bump the version to 2.0"
+$ git checkout master
+$ git merge work
+$ git tag v2.0
+
+The commits that I made are in the history of this branch.
