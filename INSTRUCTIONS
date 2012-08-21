@@ -28,7 +28,9 @@ Your mission for this breakout session is to do the following:
      in the README
    - One commit bumping the version number at the top of the README
 
-7. Merge your work back into the "master" branch.
+6. Rebase from the "master" branch. Presumably nothing has changed.
+
+7. Check out and merge your work back into the "master" branch.
 
 8. Tag your latest master commit as "v2.0". Congratulations, you've
    made a software release!
@@ -46,13 +48,12 @@ Here are some things you could try investigating:
 - Fool with around blowing away files and magically rescuing them
   via "git checkout".
 
-- Which commit introduced the false-positive-rate bug? (Try "git
+- Which commit introduced the false-positive-rate bug? (Try "git log" and "git
   blame")
 
-- Explore the repository contents and history interactively and
-  prettily with your web browser by visiting
+- Explore the repository contents and history interactively with your web browser by visiting
 
-  http://github.com/pkgwdemo/bloomdemo
+  http://github.com/brinkar/bloomdemo
 
 - On a conceptual level, what changes were made between versions of
   1.0 and 2.0? ("git log")
